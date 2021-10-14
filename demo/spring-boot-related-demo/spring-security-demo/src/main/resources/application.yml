@@ -1,2 +1,13 @@
 server:
   port: 8088
+mybatis:
+  mapper-locations: classpath*:/mybatis-mappers/*.xml
+spring:
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite://d:/projects/IdeaProjects/demo/demo/spring-boot-related-demo/spring-security-demo/src/main/resources/security-demo.db
+    username:
+    password:
+logging:
+  level:
+    root: info
