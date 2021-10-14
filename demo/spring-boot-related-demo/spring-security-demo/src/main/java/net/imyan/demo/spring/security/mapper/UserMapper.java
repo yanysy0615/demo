@@ -1,6 +1,6 @@
-package net.imyan.demo.security.mapper;
+package net.imyan.demo.spring.security.mapper;
 
-import net.imyan.demo.security.entity.UserDTO;
+import net.imyan.demo.spring.security.entity.UserDTO;
 import org.springframework.stereotype.Component;
 
 /**

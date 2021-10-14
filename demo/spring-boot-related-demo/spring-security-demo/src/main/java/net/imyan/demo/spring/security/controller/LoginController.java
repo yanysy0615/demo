@@ -1,6 +1,6 @@
-package net.imyan.demo.security.controller;
+package net.imyan.demo.spring.security.controller;
 
-import net.imyan.demo.security.util.VerifyCodeUtil;
+import net.imyan.demo.spring.security.util.VerifyCodeUtil;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;

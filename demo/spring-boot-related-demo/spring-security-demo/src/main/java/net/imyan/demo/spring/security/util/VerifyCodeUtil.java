@@ -1,4 +1,4 @@
-package net.imyan.demo.security.util;
+package net.imyan.demo.spring.security.util;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -13,6 +13,7 @@ public class VerifyCodeUtil {
 
     /**
      * 生成指定验证码的图片
+     *
      * @param text 验证码字符串
      * @return 验证码图片
      */
@@ -25,6 +26,7 @@ public class VerifyCodeUtil {
 
     /**
      * 创建背景图
+     *
      * @return 背景图
      */
     private static BufferedImage createImage() {
@@ -37,6 +39,7 @@ public class VerifyCodeUtil {
 
     /**
      * 在背景图上绘制验证码
+     *
      * @param image 背景图
      * @param text  验证码字符串
      */
@@ -50,6 +53,7 @@ public class VerifyCodeUtil {
 
     /**
      * 在图上绘制干扰线
+     *
      * @param image 验证码图片
      */
     private static void drawLine(BufferedImage image) {
@@ -68,6 +72,7 @@ public class VerifyCodeUtil {
 
     /**
      * 生成随机颜色
+     *
      * @return 随机颜色
      */
     private static Color randomColor() {
@@ -79,12 +84,13 @@ public class VerifyCodeUtil {
 
     /**
      * 生成随机字体
+     *
      * @return 随机字体
      */
     private static Font randomFont() {
         String name = "宋体";
-        int style = (random.nextBoolean()? Font.PLAIN : 0) | (random.nextBoolean()? Font.PLAIN : 0)
-                | (random.nextBoolean()? Font.PLAIN : 0);
+        int style = (random.nextBoolean() ? Font.PLAIN : 0) | (random.nextBoolean() ? Font.PLAIN : 0)
+                | (random.nextBoolean() ? Font.PLAIN : 0);
         int size = random.nextInt(5) + 24;
         return new Font(name, style, size);
     }

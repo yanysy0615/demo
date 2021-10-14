@@ -1,4 +1,4 @@
-package net.imyan.demo.security.config;
+package net.imyan.demo.spring.security.config;
 
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.security.web.FilterChainProxy;

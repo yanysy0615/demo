@@ -1,7 +1,7 @@
-package net.imyan.demo.security.service;
+package net.imyan.demo.spring.security.service;
 
-import net.imyan.demo.security.entity.UserDTO;
-import net.imyan.demo.security.mapper.UserMapper;
+import net.imyan.demo.spring.security.entity.UserDTO;
+import net.imyan.demo.spring.security.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

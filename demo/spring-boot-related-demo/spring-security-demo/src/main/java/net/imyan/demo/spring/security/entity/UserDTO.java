@@ -1,17 +1,17 @@
-package net.imyan.demo.security.entity;
+package net.imyan.demo.spring.security.entity;
 
-import java.util.Date;
+import java.util.List;
 
 /**
  * @author yanys
  */
-public class UserDO {
+public class UserDTO {
     private String id;
     private String username;
     private String password;
     private String nickname;
-    private Date createTime;
-    private Date updateTime;
+    private List<String> roles;
+    private List<String> authorities;
 
     public String getId() {
         return id;
@@ -45,31 +45,31 @@ public class UserDO {
         this.nickname = nickname;
     }
 
-    public Date getCreateTime() {
-        return createTime;
+    public List<String> getRoles() {
+        return roles;
     }
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
+    public void setRoles(List<String> roles) {
+        this.roles = roles;
     }
 
-    public Date getUpdateTime() {
-        return updateTime;
+    public List<String> getAuthorities() {
+        return authorities;
     }
 
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
+    public void setAuthorities(List<String> authorities) {
+        this.authorities = authorities;
     }
 
     @Override
     public String toString() {
-        return "UserPO{" +
+        return "UserDO{" +
                 "id='" + id + '\'' +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", nickname='" + nickname + '\'' +
-                ", createTime=" + createTime +
-                ", updateTime=" + updateTime +
+                ", roles=" + roles +
+                ", authorities=" + authorities +
                 '}';
     }
 }

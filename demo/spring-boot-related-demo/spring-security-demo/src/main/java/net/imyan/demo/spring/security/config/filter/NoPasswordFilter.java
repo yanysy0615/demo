@@ -1,8 +1,8 @@
-package net.imyan.demo.security.config.filter;
+package net.imyan.demo.spring.security.config.filter;
 
-import net.imyan.demo.security.config.CustomUserDetails;
-import net.imyan.demo.security.config.SecurityConfig;
-import net.imyan.demo.security.entity.UserDTO;
+import net.imyan.demo.spring.security.config.CustomUserDetails;
+import net.imyan.demo.spring.security.config.SecurityConfig;
+import net.imyan.demo.spring.security.entity.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;

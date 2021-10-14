@@ -1,6 +1,6 @@
-package net.imyan.demo.security.config.filter;
+package net.imyan.demo.spring.security.config.filter;
 
-import net.imyan.demo.security.config.SecurityConfig;
+import net.imyan.demo.spring.security.config.SecurityConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
@@ -33,7 +33,7 @@ public class WithVerifyCodeAuthenticationFilter extends UsernamePasswordAuthenti
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
         String receivedVerifyCode = request.getParameter("verifyCode");
         Object correntVerifyCode = request.getSession().getAttribute("verifyCode");
-        if (receivedVerifyCode == null  || !receivedVerifyCode.equals(correntVerifyCode)) {
+        if (receivedVerifyCode == null || !receivedVerifyCode.equals(correntVerifyCode)) {
             throw new AuthenticationException("verifyCode error.") {
             };
         }
