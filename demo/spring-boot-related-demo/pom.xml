@@ -42,6 +42,7 @@
         <module>spring-security-demo</module>
         <module>spring-bean-scope-demo</module>
         <module>spring-bean-lifecycle-demo</module>
+        <module>spring-aop-demo</module>
     </modules>
 
 </project>
